@@ -34,7 +34,6 @@ img{
 }
 
 .main-grid, .overview-grid{
-  
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -44,15 +43,6 @@ img{
   
   
 }
-
-/* @media (min-width: 900px){
-  .main-grid{
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) repeat(4, minmax(50px, 250px)) minmax(1em, 1fr);
-    column-gap: 1.5em;
-  }
-
-} */
 
 .btn-toggle{
   
@@ -73,14 +63,16 @@ img{
   background-position: right center; 
 }
 
-/* @media (min-width: 900px){
-  .btn-toggle{
-    grid-column: -3;
-    justify-self: right;
-    margin-right: 0;
-  }
-} */
-
 .mode-switcher{
   grid-column:  -2;
+}
+
+.subtitle{
+  grid-column: 1 / span 2;
+  justify-self: left;
+}
+
+.main-text{
+  grid-column: span 2;
+  justify-self: left;
 }
