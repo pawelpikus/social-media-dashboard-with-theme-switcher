@@ -17,85 +17,109 @@
   </style>
 </head>
 <body>
-  <div class="dashboard main-grid">
-    <h1 class="dashboard-title">Social Media Dashboard</h1>
-    <p class="dashboard-subtitle">Total Followers: 23,004</p>
-    <button class="btn-toggle">🔆</button>
-    <p class="dark-mode">Dark Mode</p>
-    <div class="main-card col-1">
-      <img src="./images/icon-facebook.svg" alt="" class="social-icon">
-      <p class="followers-num">1987</p>
-      <p class="followers-text">Followers</p>
-      <p class="today-num">12 Today</p>
+  <main class="container">
+    <section class="title-section main-grid">
+      <div class="main-text">
+        <h1 class="dashboard-title">Social Media Dashboard</h1>
+        <p class="dashboard-subtitle">Total Followers: 23,004</p>
+      </div>
+      <div class="mode-switcher">
+        <p class="dark-mode">Dark Mode</p>
+        <button class="btn-toggle">🔆</button>
+      </div>
+    </section>
+    <section class="dashboard main-grid">
+      <div class="main-card">
+        <img src="./images/icon-facebook.svg" alt="" class="social-icon">
+        <p class="followers-num">1987</p>
+        <p class="followers-text">Followers</p>
+        <p class="today-num">12 Today</p>
+      </div>
+      <div class="main-card">
+        <img src="./images/icon-twitter.svg" alt="" class="social-icon">
+        <p class="followers-num">1044</p>
+        <p class="followers-text">Followers</p>
+        <p class="today-num">99 Today</p>
+      </div>
+      <div class="main-card">
+        <img src="./images/icon-instagram.svg" alt="" class="social-icon">
+        <p class="followers-num">11k</p>
+        <p class="followers-text">Followers</p>
+        <p class="today-num">1099 Today</p>
+      </div>
+      <div class="main-card">
+        <img src="./images/icon-youtube.svg" alt="" class="social-icon">
+        <p class="followers-num">8239</p>
+        <p class="followers-text">Subscribers</p>
+        <p class="today-num">144 Today</p>
+      </div>
+    </section>
+      <h2 class="subtitle main-grid">Overview - Today</h2>
+    
+    <section class="main-grid">
+      <div class="overview-card">
+        <p class="overview-card-label">Page Views</p>
+        <p class="overview-card-num">87</p>
+        <img src="./images/icon-facebook.svg" alt="" class="social-icon over-view-icon">
+        <p class="overview-percent green">3%</p> 
+      </div>
+      <div class="overview-card">
+        <p class="overview-card-label">Likes</p>
+        <p class="overview-card-num">52</p>
+        <img src="./images/icon-facebook.svg" alt="" class="social-icon overview-icon">
+        <p class="overview-percent red">-2%</p>
+      </div>
+    </section>
+    
+
+    <!-- 
+    @nathanf
+    @realnathanf
+    Nathan F.
+    
+    
+
+
+
+    
+
+    Page Views
+    87
+    3%
+
+    Likes
+    52
+    2%
+
+    Likes
+    5462
+    2257%
+
+    Profile Views
+    52k
+    1375%
+
+    Retweets
+    117
+    303%
+
+    Likes
+    507
+    553%
+
+    Likes
+    107
+    19%
+
+    Total Views
+    1407
+    12% -->
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Paweł Pikus</a>.
     </div>
-    <div class="main-card col-2">
-      <img src="./images/icon-twitter.svg" alt="" class="social-icon">
-      <p class="followers-num">1044</p>
-      <p class="followers-text">Followers</p>
-      <p class="today-num">99 Today</p>
-    </div>
-    <div class="main-card col-3">
-      <img src="./images/icon-instagram.svg" alt="" class="social-icon">
-      <p class="followers-num">11k</p>
-      <p class="followers-text">Followers</p>
-      <p class="today-num">1099 Today</p>
-    </div>
-    <div class="main-card col-4">
-      <img src="./images/icon-youtube.svg" alt="" class="social-icon">
-      <p class="followers-num">8239</p>
-      <p class="followers-text">Subscribers</p>
-      <p class="today-num">144 Today</p>
-    </div>
-    <h2 class="subtitle">Overview - Today</h2>
-  </div>
-
-  <!-- 
-  @nathanf
-  @realnathanf
-  Nathan F.
-  
-  
-
-
-
-  
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12% -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Paweł Pikus</a>.
-  </div>
+  </main>
   <script src="./script.js "></script>
 </body>
 </html>
