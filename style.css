@@ -50,6 +50,10 @@ img{
   
 }
 
+.dark-mode-container{
+  display: flex;
+  justify-content: space-between;
+}
 
 .main-text{
   grid-column: span 2;
@@ -58,7 +62,7 @@ img{
   border-bottom: 1px solid #404040;
 }
 
-@media (min-width: 600px){
+@media (min-width: 500px){
   .main-grid, .overview-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
@@ -71,6 +75,12 @@ img{
   .main-grid, .overview-grid{
     gap: 1em;
   }
+
+  .dark-mode-container{
+    grid-column: -1 / -2;
+    justify-content: flex-end;
+  }
+
 }
 
 .title-section{
@@ -131,6 +141,16 @@ h1, h2, p{
   font-weight: 700;
 }
 
+.overview{
+  margin: 1em auto;
+  text-align: left;
+}
+
+.overview-card-num{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .green{
   color: hsl(163, 72%, 41%);
 }
@@ -162,10 +182,13 @@ h1, h2, p{
 }
 
 .btn-toggle{
+  width: 40px;
+  height: 40px;
   grid-column: -1;
   margin: .5em .0em .5em .5em;
   padding: 5px;
   justify-self: center;
+  align-self: center;
   font-size: 1rem;
   transition: 500ms;
   background-size: 200% auto;
@@ -180,8 +203,32 @@ h1, h2, p{
   background-position: right center; 
 }
 
+/* overview card */
+.overview-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  padding: 1em;
+  gap: 1em;
+  
+}
 
+.overview-icon{
+  margin: 0;
+  
+}
 
+.overview-card-label,
+.overview-card-num{
+  grid-column: 1;
+  justify-self: start;
+  align-self: center;
+}
 
-
+.overview-icon,
+.overview-percent{
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+}
 
