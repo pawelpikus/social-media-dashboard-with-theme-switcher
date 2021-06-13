@@ -85,6 +85,7 @@ img{
 
 .title-section{
   margin-bottom: 1em;
+  gap: 0;
 }
 .subtitle{
   grid-column: 1 / span 2;
@@ -182,11 +183,11 @@ h1, h2, p{
 }
 
 .btn-toggle{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   grid-column: -1;
   margin: .5em .0em .5em .5em;
-  padding: 5px;
+  padding: 2px;
   justify-self: center;
   align-self: center;
   font-size: 1rem;
