@@ -19,34 +19,88 @@ body{
     min-height: 100vh;
     background: var(--bg-color);
     background-repeat: no-repeat;
-    font-size: 1rem;
+    font-size: .875rem;
     font-family: 'Inter', sans-serif;
     
-}
-
-.container{
-  width: 90%;
-  margin: 0 auto;
 }
 
 img{
   max-width: 100%;
 }
 
+/* ----------------- */
+/*   main layout     */
+/* ----------------- */
+.container{
+  width: 90%;
+  margin: 2em auto;
+}
+
 .main-grid, .overview-grid{
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1em;
+  gap: 1em 0;
   margin: 0 auto;
   text-align: center;
   
-  
+}
+
+.main-text{
+  grid-column: span 2;
+  padding-bottom: 1em;
+  text-align: left;
+  border-bottom: 1px solid #404040;
+}
+
+@media (min-width: 440px){
+  .main-text{
+    border: 0;
+  }
+
+  .main-grid, .overview-grid{
+    gap: 1em;
+  }
+}
+
+.title-section{
+  margin-bottom: 1em;
+}
+.subtitle{
+  grid-column: 1 / span 2;
+  justify-self: left;
+}
+
+/* ----------------- */
+/*    typography     */
+/* ----------------- */
+
+h1, h2, p{
+  margin: 0;
+}
+
+.dashboard-title{
+  font-weight: 700;
+}
+
+.dashboard-subtitle, 
+.dark-mode-text{
+  font-size: .8rem;
+  font-weight: 700;
+  opacity: .7;
+}
+
+/* - dark mode button - */
+
+.dark-mode-text{
+  grid-column: 1;
+  justify-self: left;
+  align-self: center;
 }
 
 .btn-toggle{
-  
-  margin: .5em;
+  grid-column: -1;
+  margin: .5em .0em .5em .5em;
   padding: 5px;
   justify-self: center;
   font-size: 1rem;
@@ -63,16 +117,8 @@ img{
   background-position: right center; 
 }
 
-.mode-switcher{
-  grid-column:  -2;
-}
 
-.subtitle{
-  grid-column: 1 / span 2;
-  justify-self: left;
-}
 
-.main-text{
-  grid-column: span 2;
-  justify-self: left;
-}
+
+
+
