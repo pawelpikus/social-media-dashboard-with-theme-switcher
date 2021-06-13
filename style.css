@@ -5,11 +5,13 @@
 :root {
   --text-color: #404040;
   --bg-color: #fff;
+  --card-bg-color:hsl(227, 47%, 96%);
 }
 
 :root .dark-theme{
   --text-color: #FFF;
   --bg-color: linear-gradient(180deg, #191926 30%, #10101a 0);
+  --card-bg-color: hsl(228, 28%, 20%);
 } 
 
 body{
@@ -38,13 +40,16 @@ img{
 
 .main-grid, .overview-grid{
   max-width: 1000px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1em 0;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  gap: 2em; 
+  justify-content: center;
   margin: 0 auto;
   text-align: center;
   
 }
+
 
 .main-text{
   grid-column: span 2;
@@ -53,7 +58,12 @@ img{
   border-bottom: 1px solid #404040;
 }
 
-@media (min-width: 440px){
+@media (min-width: 600px){
+  .main-grid, .overview-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  }
+
   .main-text{
     border: 0;
   }
@@ -79,6 +89,11 @@ h1, h2, p{
   margin: 0;
 }
 
+.main-card{
+  max-width: 600px;
+  padding: 2em 0;
+}
+
 .dashboard-title{
   font-weight: 700;
 }
@@ -87,9 +102,57 @@ h1, h2, p{
 .dark-mode-text{
   font-size: .8rem;
   font-weight: 700;
+}
+
+.social-icon{
+  margin-bottom: 1em;
+}
+
+.followers-num{
+  line-height: 1.1;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.followers-text{
+  
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.dashboard-subtitle, 
+.dark-mode-text,
+.followers-text{
   opacity: .7;
 }
 
+.today-num{
+  font-weight: 700;
+}
+
+.green{
+  color: hsl(163, 72%, 41%);
+}
+
+.red{
+  color: hsl(356, 69%, 56%);
+}
+
+/* - main card - */
+.main-card,
+.overview-card{
+  background-color:var(--card-bg-color);
+  border-radius: 5px;
+}
+
+.main-card--fb-tw{
+  border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.main-card--yt{
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
 /* - dark mode button - */
 
 .dark-mode-text{
