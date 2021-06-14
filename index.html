@@ -18,37 +18,51 @@
 </head>
 <body>
   <main class="container">
-    <section class="title-section main-grid">
+    <section class="title-section d-flex">
       <div class="main-text">
         <h1 class="dashboard-title">Social Media Dashboard</h1>
         <p class="dashboard-subtitle">Total Followers: 23,004</p>
       </div>
       <div class="dark-mode-container">
         <p class="dark-mode-text">Dark Mode</p>
-        <button class="btn-toggle">🔆</button>
+        <div class="slider-container">
+          <input type="checkbox" id="toggle-button" class="toggle-button" aria-label="dark mode slider">
+        </div>
       </div>
     </section>
     <section class="dashboard main-grid">
       <div class="main-card main-card--fb-tw">
-        <img src="./images/icon-facebook.svg" alt="" class="social-icon">
+        <div class="icon-container">
+          <img src="./images/icon-facebook.svg" alt="" class="social-icon">
+          <p class="icon-text">@nathanf</p>
+        </div>
         <p class="followers-num">1987</p>
         <p class="followers-text">Followers</p>
         <p class="today-num green">12 Today</p>
       </div>
       <div class="main-card main-card--fb-tw">
-        <img src="./images/icon-twitter.svg" alt="" class="social-icon">
+        <div class="icon-container">
+          <img src="./images/icon-twitter.svg" alt="" class="social-icon">
+          <p class="icon-text">@nathanf</p>
+        </div>
         <p class="followers-num">1044</p>
         <p class="followers-text">Followers</p>
         <p class="today-num green">99 Today</p>
       </div>
       <div class="main-card main-card--insta">
-        <img src="./images/icon-instagram.svg" alt="" class="social-icon">
+        <div class="icon-container">
+          <img src="./images/icon-instagram.svg" alt="" class="social-icon">
+          <p class="icon-text">@realnathanf</p>
+        </div>
         <p class="followers-num">11k</p>
         <p class="followers-text">Followers</p>
         <p class="today-num green">1099 Today</p>
       </div>
       <div class="main-card main-card--yt">
-        <img src="./images/icon-youtube.svg" alt="" class="social-icon">
+        <div class="icon-container">
+          <img src="./images/icon-youtube.svg" alt="" class="social-icon">
+          <p class="icon-text">Nathan F.</p>
+        </div>
         <p class="followers-num">8239</p>
         <p class="followers-text">Subscribers</p>
         <p class="today-num red">144 Today</p>
@@ -108,41 +122,10 @@
         <p class="overview-percent red">12%</p>
       </div>
     </section>
-    
-
-    <!-- 
-    @nathanf
-    @realnathanf
-    Nathan F.
-    
-    
-
-
-
-    
-
-    
-    
-
-  
-
-  
-
-    Likes
-    507
-    553%
-
-    Likes
-    107
-    19%
-
-    Total Views
-    1407
-    12% -->
-    
+     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Paweł Pikus</a>.
+      Coded by <a href="https://github.com/pawelpikus">Paweł Pikus</a>.
     </div>
   </main>
   <script src="./script.js "></script>

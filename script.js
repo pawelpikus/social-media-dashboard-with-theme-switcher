@@ -1,5 +1,5 @@
-const btn = document.querySelector(".btn-toggle");
+const slider = document.querySelector(".toggle-button");
 
-btn.addEventListener("click", ()=>{
+slider.addEventListener("click", ()=>{
     document.body.classList.toggle("dark-theme");
 });
