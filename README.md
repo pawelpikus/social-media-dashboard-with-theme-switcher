@@ -58,12 +58,6 @@ There's this cool feature in CSS Grid called auto-fill which I found really usef
 ```
 It helped me a lot to maintain the full responsiveness of this site.
 
-```css
-.main-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  }
-```
 Also, the toggle button was a bit of a challenge - I learned how to use :checked and ::after pseudo classes to make it work.
 
 ```html
