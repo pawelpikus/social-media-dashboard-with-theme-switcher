@@ -84,7 +84,7 @@ Also, the toggle button was a bit of a challenge - I learned how to use :checked
   background-color: hsl(228, 28%, 20%);  
 }
 ```
-And how about the gradient border? I didn't realised there is no possibility to directly enforce gradients to border attribute. So, I used a hack with good ol' ::after:
+And how about the gradient border? I didn't realise there is no possibility to directly enforce gradients to border attribute. So, I used a hack with good ol' ::after:
 
 ```css
 .main-card--insta{
